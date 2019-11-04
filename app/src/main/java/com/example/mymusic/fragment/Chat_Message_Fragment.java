@@ -37,8 +37,6 @@ public class Chat_Message_Fragment extends Fragment {
 
         ImageView message1 = view.findViewById(R.id.message1);
         message1.setImageResource(R.drawable.baseline_chatbubble_orange_24);
-
-
         message1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

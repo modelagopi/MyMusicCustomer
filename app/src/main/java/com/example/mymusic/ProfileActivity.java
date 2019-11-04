@@ -19,10 +19,8 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.profile);
+        setContentView(R.layout.user_profile);
         initUI();
-
-
 
         textView52 = findViewById(R.id.textView52);
         imageView47 = findViewById(R.id.imageView47);

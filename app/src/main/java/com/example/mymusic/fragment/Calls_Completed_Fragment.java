@@ -27,7 +27,7 @@ public class Calls_Completed_Fragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.calls_completed_fragment, container, false);
 
-        FloatingActionButton fab = view.findViewById(R.id.callscompletedfab);
+      /*  FloatingActionButton fab = view.findViewById(R.id.callscompletedfab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +36,7 @@ public class Calls_Completed_Fragment extends Fragment {
                 startActivity(intent);
 
             }
-        });
+        });*/
 
 
         initUI(view);

@@ -30,7 +30,7 @@ public class Calls_Upcomming_Fragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.calls_upcomming_fragemnt, container, false);
 
-        FloatingActionButton fab = view.findViewById(R.id.callsfab);
+      /*  FloatingActionButton fab = view.findViewById(R.id.callsfab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +39,7 @@ public class Calls_Upcomming_Fragment extends Fragment {
                 startActivity(intent);
 
             }
-        });
+        });*/
 
         initUI(view);
 
@@ -53,49 +53,35 @@ public class Calls_Upcomming_Fragment extends Fragment {
     private void initUI(View view){
 
 
-        ImageView edit1 = view.findViewById(R.id.edit1);
-        ImageView delete1 = view.findViewById(R.id.delete1);
-        edit1.setImageResource(R.drawable.edit);
-        delete1.setImageResource(R.drawable.delete);
-        ImageView edit2 = view.findViewById(R.id.edit2);
-        ImageView delete2 = view.findViewById(R.id.delete2);
-        edit2.setImageResource(R.drawable.edit);
-        delete2.setImageResource(R.drawable.delete);
-        ImageView edit3 = view.findViewById(R.id.edit3);
-        ImageView delete3 = view.findViewById(R.id.delete3);
-        edit3.setImageResource(R.drawable.edit);
-        delete3.setImageResource(R.drawable.delete);
-        ImageView edit4 = view.findViewById(R.id.edit4);
-        ImageView delete4 = view.findViewById(R.id.delete4);
-        edit4.setImageResource(R.drawable.edit);
-        delete4.setImageResource(R.drawable.delete);
-        ImageView edit5 = view.findViewById(R.id.edit5);
-        ImageView delete5 = view.findViewById(R.id.delete5);
-        edit5.setImageResource(R.drawable.edit);
-        delete5.setImageResource(R.drawable.delete);
-        ImageView edit6 = view.findViewById(R.id.edit6);
-        ImageView delete6 = view.findViewById(R.id.delete6);
-        edit6.setImageResource(R.drawable.edit);
-        delete6.setImageResource(R.drawable.delete);
+        ImageView book1 = view.findViewById(R.id.book1);
+        book1.setImageResource(R.drawable.booking);
 
-        ImageView edit7 = view.findViewById(R.id.edit7);
-        ImageView delete7 = view.findViewById(R.id.delete7);
-        edit7.setImageResource(R.drawable.edit);
-        delete7.setImageResource(R.drawable.delete);
+        ImageView book2 = view.findViewById(R.id.book2);
+        book2.setImageResource(R.drawable.booking);
 
-        ImageView edit8 = view.findViewById(R.id.edit8);
-        ImageView delete8 = view.findViewById(R.id.delete8);
-        edit8.setImageResource(R.drawable.edit);
-        delete8.setImageResource(R.drawable.delete);
-        ImageView edit9 = view.findViewById(R.id.edit9);
-        ImageView delete9 = view.findViewById(R.id.delete9);
-        edit9.setImageResource(R.drawable.edit);
-        delete9.setImageResource(R.drawable.delete);
-        ImageView edit10 = view.findViewById(R.id.edit10);
-        ImageView delete10 = view.findViewById(R.id.delete10);
-        edit10.setImageResource(R.drawable.edit);
-        delete10.setImageResource(R.drawable.delete);
+        ImageView book3 = view.findViewById(R.id.book3);
+        book3.setImageResource(R.drawable.booking);
 
+        ImageView book4 = view.findViewById(R.id.book4);
+        book4.setImageResource(R.drawable.booking);
+
+        ImageView book5 = view.findViewById(R.id.book5);
+        book5.setImageResource(R.drawable.booking);
+
+        ImageView book6 = view.findViewById(R.id.book6);
+        book6.setImageResource(R.drawable.booking);
+
+        ImageView book7 = view.findViewById(R.id.book7);
+        book7.setImageResource(R.drawable.booking);
+
+        ImageView book8 = view.findViewById(R.id.book8);
+        book8.setImageResource(R.drawable.booking);
+
+        ImageView book9 = view.findViewById(R.id.book9);
+        book9.setImageResource(R.drawable.booking);
+
+        ImageView book10 = view.findViewById(R.id.book10);
+        book10.setImageResource(R.drawable.booking);
 
 
         ImageView imageView1 = view.findViewById(R.id.chatimage1);
