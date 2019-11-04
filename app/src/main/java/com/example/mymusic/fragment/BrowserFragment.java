@@ -7,18 +7,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+//import com.example.mymusic.HomeEventsActivity;
 import com.example.mymusic.MessageFabActivity;
 import com.example.mymusic.MsgReqFabActivity;
+import com.example.mymusic.ProfileActivity;
 import com.example.mymusic.R;
+import com.example.mymusic.SingersListActivity;
 import com.example.mymusic.Utils;
 
 public class BrowserFragment extends Fragment {
 
-    ImageView message_1,bookacall_1;
+    ImageView message_1,bookacall_1 ,imageView1;
 
     Context context;
 
@@ -39,9 +43,13 @@ public class BrowserFragment extends Fragment {
 
     }
 
+
     private void initUI(View view){
 
         ImageView filter = view.findViewById(R.id.filter);
+
+        imageView1 = view.findViewById(R.id.imageView1);
+
 
         filter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +60,14 @@ public class BrowserFragment extends Fragment {
             }
         });
 
+
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(),HomeEventsActivity.class);
+//                startActivity(intent);
+            }
+        });
 
      /*   ImageView message_1 = view.findViewById(R.id.message_1);
         message_1.setOnClickListener(new View.OnClickListener() {
