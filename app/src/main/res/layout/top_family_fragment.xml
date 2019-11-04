@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/roboto"
+        android:paddingTop="@dimen/space_16"
+        android:text="Tab 3"
+        android:background="@drawable/catagery_rounded_primary"
+        android:textAlignment="center"
+        android:textColor="@color/md_grey_800"
+        android:textSize="@dimen/font_title_size" />
+
+</FrameLayout>
