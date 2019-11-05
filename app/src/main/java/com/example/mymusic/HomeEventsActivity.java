@@ -1,6 +1,8 @@
 package com.example.mymusic;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +26,16 @@ public class HomeEventsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
+
+        ImageView imageView47 = findViewById(R.id.imageView47);
+        imageView47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+                finish();
+            }
+        });
+
         initData();
 
         initUI();
@@ -56,8 +68,8 @@ public class HomeEventsActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
     }
 
-    private void initActions()
-    {
+    private void initActions() {
+
 
        /* mAdapter.setOnItemClickListener((view, obj, position) -> Toast.makeText(this , "Selected : " + obj.name , Toast.LENGTH_LONG).show());*/
     }

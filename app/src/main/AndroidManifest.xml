@@ -28,7 +28,7 @@
         <activity android:name=".HomeEventsActivity"/>
         <activity android:name=".PaymentCardDetails"/>
         <activity android:name=".PaymentSuccessDialog"/>
-        <activity android:name=".Singers_Profile_Activity"/>
+        <activity android:name=".Celebrity_Profile_Activity"/>
         <activity android:name=".Ticket_Booking_Activity"/>
 
     </application>

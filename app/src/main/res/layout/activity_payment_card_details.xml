@@ -20,7 +20,6 @@
             app:contentInsetStartWithNavigation="0dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
 
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -53,9 +52,19 @@
 
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
-
-
     </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_large"
             android:visibility="visible"
-            app:cardBackgroundColor="@color/amber_800"
+            app:cardBackgroundColor="#043E77"
             app:cardCornerRadius="6dp"
             app:cardElevation="3dp">
 
@@ -335,4 +344,6 @@
             android:textColor="@android:color/white" />
     </LinearLayout>
 
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

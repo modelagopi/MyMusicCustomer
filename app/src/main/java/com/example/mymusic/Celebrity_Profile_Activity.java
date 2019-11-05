@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Singers_Profile_Activity extends AppCompatActivity {
+public class Celebrity_Profile_Activity extends AppCompatActivity {
 
     ImageView imageView47;
     TextView textView52;
