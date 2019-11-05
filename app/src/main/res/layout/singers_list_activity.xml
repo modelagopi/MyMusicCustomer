@@ -32,6 +32,7 @@
 
 
                  <Button
+                     android:id="@+id/button1"
                      android:layout_width="wrap_content"
                      android:layout_height="35dp"
                      android:text="Music"
@@ -39,6 +40,7 @@
                      android:layout_margin="1dp"
                      android:textColor="#ffffff"/>
                  <Button
+                     android:id="@+id/button2"
                      android:layout_width="wrap_content"
                      android:layout_height="35dp"
                      android:text="Arts"
@@ -47,6 +49,7 @@
                      android:textColor="#ffffff"/>
 
                  <Button
+                     android:id="@+id/button3"
                      android:layout_width="wrap_content"
                      android:layout_height="35dp"
                      android:text="Magic"
@@ -54,16 +57,18 @@
                      android:layout_margin="1dp"
                      android:textColor="#ffffff"/>
                  <Button
+                     android:id="@+id/button4"
                      android:layout_width="wrap_content"
                      android:layout_height="35dp"
-                     android:text="Magic"
+                     android:text="Book Writers "
                      android:background="@drawable/shap"
                      android:layout_margin="1dp"
                      android:textColor="#ffffff"/>
                  <Button
+                     android:id="@+id/button5"
                      android:layout_width="wrap_content"
                      android:layout_height="35dp"
-                     android:text="Magic"
+                     android:text="Personals"
                      android:background="@drawable/shap"
                      android:layout_margin="1dp"
                      android:textColor="#ffffff"/>
