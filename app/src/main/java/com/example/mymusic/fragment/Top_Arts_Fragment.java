@@ -13,17 +13,19 @@ import com.example.mymusic.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Top_Health_Fragment extends Fragment {
+public class Top_Arts_Fragment extends Fragment {
 
 
-    public Top_Health_Fragment() {
+    public Top_Arts_Fragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.top_health_fragment, container, false);
+        return inflater.inflate(R.layout.top_relationship_fragment, container, false);
     }
+
 }
