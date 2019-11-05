@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 //import com.example.mymusic.HomeEventsActivity;
+import com.example.mymusic.HomeEventsActivity;
 import com.example.mymusic.MessageFabActivity;
 import com.example.mymusic.MsgReqFabActivity;
 import com.example.mymusic.ProfileActivity;
@@ -64,8 +65,8 @@ public class BrowserFragment extends Fragment {
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(getActivity(),HomeEventsActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getActivity(), HomeEventsActivity.class);
+               startActivity(intent);
             }
         });
 

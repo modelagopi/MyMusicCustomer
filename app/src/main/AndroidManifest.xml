@@ -25,6 +25,7 @@
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".SingersListActivity"/>
         <activity android:name=".Chat_Activity"/>
+        <activity android:name=".HomeEventsActivity"/>
     </application>
 
 </manifest>

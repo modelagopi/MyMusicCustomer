@@ -93,4 +93,19 @@ public class Utils {
         canvas.drawCircle(width / 2, height / 2, radius - borderWidth / 2, paint);
         return canvasBitmap;
     }
+
+    public static int getDrawableInt(Context context, String name) {
+        return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
+    }
+    public static void setImageToImageView(Context context, ImageView imageView, int drawable) {
+        RequestOptions requestOptions = new RequestOptions()
+                .diskCacheStrategy(DiskCacheStrategy.NONE) // because file name is always same
+                .skipMemoryCache(true);
+
+        Glide.with(context)
+                .load(drawable)
+                .apply(requestOptions)
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(imageView);
+    }
 }

@@ -1,80 +1,70 @@
 package com.example.mymusic;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.mymusic.adapter.FeatureChatGeneralChat2Adapter;
+import com.example.mymusic.object.ChatDetailsVO;
+import com.example.mymusic.repository.GeneralChatDetailsListRepository;
+
+import java.util.List;
 
 public class MessageFabActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
 
-    EditText title,desc;
-    Spinner spinner;
-    Button send;
-    ImageView bookingback;
-    String[] type = { "David", "Jake","Michael", "Stanley", "Frankie", "Elliot"};
+    List<ChatDetailsVO> chatDetailsList;
+    FeatureChatGeneralChat2Adapter chatDetailsAdapter;
 
+    RecyclerView rvChatDetails;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.msg_fab_action);
 
-        title = (EditText)findViewById(R.id.title);
-        desc = (EditText)findViewById(R.id.desc);
-        send = (Button)findViewById(R.id.send);
-        spinner = (Spinner)findViewById(R.id.selectcoach);
-        bookingback = (ImageView) findViewById(R.id.bookingback);
+        initData();
 
-        send.setOnClickListener(this);
-        spinner.setOnItemSelectedListener(this);
+        initUI();
 
+        initDataBindings();
 
-        ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,type);
-        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        //Setting the ArrayAdapter data on the Spinner
-        spinner.setAdapter(aa);
+        initActions();
+    }
 
+    private void initData() {
+        chatDetailsList = GeneralChatDetailsListRepository.getGeneralChatDetailsList();
+    }
+    private void initUI() {
+       // initToolbar();
 
-        bookingback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        //get list adapter
+        chatDetailsAdapter = new FeatureChatGeneralChat2Adapter(chatDetailsList);
 
-                finish();
+        //get recycler view
+        rvChatDetails = findViewById(R.id.rv_chat_details);
 
-            }
-        });
+        RecyclerView.LayoutManager mLayoutManger = new LinearLayoutManager(getApplicationContext());
+        rvChatDetails.setLayoutManager(mLayoutManger);
 
-       send.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-
-               String t = title.getText().toString().trim();
-               String d = desc.getText().toString().trim();
-
-               if (t.equals("")){
-                   title.setError("Title Required");
-               }else if (d.equals("")){
-                   desc.setError("Description Required");
-               }else {
-                   startActivity(new Intent(MessageFabActivity.this, MainActivity.class));
-                   Toast.makeText(MessageFabActivity.this,"Your message send succesfully",Toast.LENGTH_LONG).show();
-
-               }
-
-           }
-       });
-
+        rvChatDetails.setAdapter(chatDetailsAdapter);
 
     }
+    private void initDataBindings() {
+
+    }
+
+    private void initActions() {
+
+    }
+
+
+
+
 
     @Override
     public void onClick(View view) {

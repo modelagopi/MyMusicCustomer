@@ -13,18 +13,18 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
         android:enabled="true"
         android:icon="@drawable/users"
         app:showAsAction="ifRoom"
-        android:title="Singers" />
+        android:title="Celebrates" />
     <item
         android:id="@+id/masg"
         android:enabled="true"
         android:icon="@drawable/baseline_chatbubble_orange_24"
-        android:title="Chat"
+        android:title="Follow"
         />
     <item
         android:id="@+id/calender"
         android:enabled="true"
         android:icon="@drawable/calendar"
-        android:title="calender"
+        android:title="Events"
         app:showAsAction="ifRoom" >
     </item>
     <item
