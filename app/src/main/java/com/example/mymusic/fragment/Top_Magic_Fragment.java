@@ -10,9 +10,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.mymusic.R;
 
-public class Top_Acadamic_Fragment extends Fragment {
+public class Top_Magic_Fragment extends Fragment {
 
-    public Top_Acadamic_Fragment() {
+    public Top_Magic_Fragment() {
         // Required empty public constructor
     }
 

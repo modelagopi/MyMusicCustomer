@@ -29,6 +29,7 @@
         <activity android:name=".Ticket_Booking_Activity"/>
         <activity android:name=".PaymentSuccessDialog"/>
         <activity android:name=".PaymentCardDetails"/>
+        <activity android:name=".HomeEventsActivity"/>
     </application>
 
 </manifest>

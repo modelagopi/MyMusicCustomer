@@ -10,9 +10,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.mymusic.R;
 
-public class Top_Carrier_Fragment extends Fragment {
+public class Top_Music_Fragment extends Fragment {
 
-    public Top_Carrier_Fragment() {
+    public Top_Music_Fragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +25,7 @@ public class Top_Carrier_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.top_carrer_fragment, container, false);
+        return inflater.inflate(R.layout.top_business_fragment, container, false);
     }
 
     @Override

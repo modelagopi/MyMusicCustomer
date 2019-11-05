@@ -12,11 +12,11 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.mymusic.adapter.ViewPagerAdapter;
 import com.example.mymusic.fragment.BrowserFragment;
 import com.example.mymusic.fragment.TaggedFragment;
-import com.example.mymusic.fragment.Top_Acadamic_Fragment;
-import com.example.mymusic.fragment.Top_Business_Fragment;
-import com.example.mymusic.fragment.Top_Carrier_Fragment;
-import com.example.mymusic.fragment.Top_Health_Fragment;
-import com.example.mymusic.fragment.Top_Relationship_Fragment;
+import com.example.mymusic.fragment.Top_Magic_Fragment;
+import com.example.mymusic.fragment.Top_Music_Fragment;
+import com.example.mymusic.fragment.Top_Personal_Fragment;
+import com.example.mymusic.fragment.Top_BookWrite_Fragment;
+import com.example.mymusic.fragment.Top_Arts_Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
@@ -107,19 +107,19 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(HiredFragment, "Hired");*/
 
 
-        Top_Business_Fragment HiredFragmen = new Top_Business_Fragment();
+        Top_Music_Fragment HiredFragmen = new Top_Music_Fragment();
         adapter.addFragment(HiredFragmen, "Music");
 
-        Top_Relationship_Fragment HiredFragme = new Top_Relationship_Fragment();
+        Top_Arts_Fragment HiredFragme = new Top_Arts_Fragment();
         adapter.addFragment(HiredFragme, "Arts");
 
-        Top_Health_Fragment HiredFragm = new Top_Health_Fragment();
-        adapter.addFragment(HiredFragm, "Books Writers");
+        Top_BookWrite_Fragment HiredFragm = new Top_BookWrite_Fragment();
+        adapter.addFragment(HiredFragm, "Book Writers");
 
-        Top_Carrier_Fragment tab4 = new Top_Carrier_Fragment();
+        Top_Personal_Fragment tab4 = new Top_Personal_Fragment();
         adapter.addFragment(tab4, "Personal Development");
 
-        Top_Acadamic_Fragment tab5 = new Top_Acadamic_Fragment();
+        Top_Magic_Fragment tab5 = new Top_Magic_Fragment();
         adapter.addFragment(tab5, "Magic");
 
         /*Top_Family_Fragment tab6 = new Top_Family_Fragment();

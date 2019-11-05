@@ -8,10 +8,19 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.mymusic.adapter.ViewPagerAdapter;
+import com.example.mymusic.fragment.Top_Arts_Fragment;
+import com.example.mymusic.fragment.Top_BookWrite_Fragment;
+import com.example.mymusic.fragment.Top_Magic_Fragment;
+import com.example.mymusic.fragment.Top_Music_Fragment;
+import com.example.mymusic.fragment.Top_Personal_Fragment;
+import com.google.android.material.tabs.TabLayout;
 
 public class SingersListActivity extends AppCompatActivity {
 
-    ImageView coachesback;
+   // ImageView coachesback;
     LinearLayout clist_1,clist_2,clist_3,clist_4,clist_5,clist_6,clist_7,clist_8,clist_9,clist_10;
 
     @Override
@@ -20,22 +29,55 @@ public class SingersListActivity extends AppCompatActivity {
         setContentView(R.layout.singers_list_activity);
 
         InitUI();
+    }
 
-        coachesback.setOnClickListener(new View.OnClickListener() {
+       /* coachesback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
 
             }
-        });
+        });*/
+
+      /*  ViewPager viewP = findViewById(R.id.viewPager2);
+        setupViewPag(viewP);
+
+        TabLayout tabLayou = findViewById(R.id.tabLayout1);
+        tabLayou.setupWithViewPager(viewP);
+
+    }*/
+   /* private void setupViewPag(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+
+   *//*     BrowserFragment BrowserFragment = new BrowserFragment();
+        adapter.addFragment(BrowserFragment, "Browser");
+
+        SavedFragment SavedFragment = new SavedFragment();
+        adapter.addFragment(SavedFragment, "Saved");
+
+        HiredFragment HiredFragment = new HiredFragment();
+        adapter.addFragment(HiredFragment, "Hired");*//*
+
+
+        Top_Music_Fragment HiredFragmen = new Top_Music_Fragment();
+        adapter.addFragment(HiredFragmen, "Music");
+
+        Top_Arts_Fragment HiredFragme = new Top_Arts_Fragment();
+        adapter.addFragment(HiredFragme, "Arts");
+
+        Top_BookWrite_Fragment HiredFragm = new Top_BookWrite_Fragment();
+        adapter.addFragment(HiredFragm, "Book Writers");
 
 
 
+
+        viewPager.setAdapter(adapter);
     }
+*/
 
     public void InitUI(){
 
-        coachesback = (ImageView) findViewById(R.id.back_clist);
+       // coachesback = (ImageView) findViewById(R.id.back_clist);
 
         clist_1 = (LinearLayout) findViewById(R.id.clist_1);
         clist_1.setOnClickListener(new View.OnClickListener() {
