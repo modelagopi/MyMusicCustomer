@@ -41,7 +41,7 @@ public class SingersListActivity extends AppCompatActivity {
         clist_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
 
@@ -50,63 +50,63 @@ public class SingersListActivity extends AppCompatActivity {
         clist_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_3 = (LinearLayout) findViewById(R.id.clist_3);
         clist_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_4 = (LinearLayout) findViewById(R.id.clist_4);
         clist_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_5 = (LinearLayout) findViewById(R.id.clist_5);
         clist_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_6 = (LinearLayout) findViewById(R.id.clist_6);
         clist_6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_7 = (LinearLayout) findViewById(R.id.clist_7);
         clist_7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_8 = (LinearLayout) findViewById(R.id.clist_8);
         clist_8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_9 = (LinearLayout) findViewById(R.id.clist_9);
         clist_9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
         clist_10 = (LinearLayout) findViewById(R.id.clist_10);
         clist_10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SingersListActivity.this,ProfileActivity.class));
+                startActivity(new Intent(SingersListActivity.this,Singers_Profile_Activity.class));
             }
         });
 

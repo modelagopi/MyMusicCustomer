@@ -1,9 +1,6 @@
 package com.example.mymusic;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.style.UnderlineSpan;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,14 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ProfileActivity extends AppCompatActivity {
+public class Singers_Profile_Activity extends AppCompatActivity {
 
     ImageView imageView47;
     TextView textView52;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_profile);
+        setContentView(R.layout.profile);
         initUI();
 
         textView52 = findViewById(R.id.textView52);
@@ -67,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
         //this is only needed if you have specific things
         //that you want to do when the user presses the back button.
         */
-/* your specific things...*//*
+    /* your specific things...*//*
 
         super.onBackPressed();
     }
@@ -87,7 +84,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void initUI() {
         ImageView imageView1 = findViewById(R.id.profileImageView);
 
-        Utils.setCircleImageToImageView(this, imageView1, R.drawable.ramesh, 0, 0);
+        Utils.setCircleImageToImageView(this, imageView1, R.drawable.pic3, 0, 0);
 
     }
 }

@@ -7,18 +7,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.mymusic.BookACall;
 import com.example.mymusic.R;
+import com.example.mymusic.Ticket_Booking_Activity;
 import com.example.mymusic.Utils;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Calls_Upcomming_Fragment extends Fragment {
 
     Context context;
+    LinearLayout bookLL1;
 
     public Calls_Upcomming_Fragment() {
         // Required empty public constructor
@@ -51,6 +54,14 @@ public class Calls_Upcomming_Fragment extends Fragment {
 
 
     private void initUI(View view){
+
+        bookLL1 = view.findViewById(R.id.bookLL1);
+        bookLL1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
 
         ImageView book1 = view.findViewById(R.id.book1);

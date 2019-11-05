@@ -90,10 +90,10 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(BrowserFragment, "Browse");
 
         SavedFragment SavedFragment = new SavedFragment();
-        adapter.addFragment(SavedFragment, "Saved");
+        adapter.addFragment(SavedFragment, "Tagged");
 
-        HiredFragment HiredFragment = new HiredFragment();
-        adapter.addFragment(HiredFragment, "Hired");
+       /* HiredFragment HiredFragment = new HiredFragment();
+        adapter.addFragment(HiredFragment, "Hired");*/
 
 
         viewPager.setAdapter(adapter);
@@ -114,19 +114,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         Top_Business_Fragment HiredFragmen = new Top_Business_Fragment();
-        adapter.addFragment(HiredFragmen, "Events");
+        adapter.addFragment(HiredFragmen, "Musicians");
 
         Top_Relationship_Fragment HiredFragme = new Top_Relationship_Fragment();
-        adapter.addFragment(HiredFragme, "Music");
+        adapter.addFragment(HiredFragme, "Artists");
 
         Top_Health_Fragment HiredFragm = new Top_Health_Fragment();
-        adapter.addFragment(HiredFragm, "Regalia");
+        adapter.addFragment(HiredFragm, "Book Writers");
 
         Top_Carrier_Fragment tab4 = new Top_Carrier_Fragment();
-        adapter.addFragment(tab4, "Profile");
+        adapter.addFragment(tab4, "Personality Development");
 
         Top_Acadamic_Fragment tab5 = new Top_Acadamic_Fragment();
-        adapter.addFragment(tab5, "Sold Items");
+        adapter.addFragment(tab5, "Magic");
 
         Top_Family_Fragment tab6 = new Top_Family_Fragment();
         adapter.addFragment(tab6, "Family");

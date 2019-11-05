@@ -37,7 +37,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Profile"
+                    android:text="Ticket Booking"
                     android:layout_marginTop="0dp"
                     android:layout_marginStart="10dp"
                     android:textColor="@color/white"
@@ -84,7 +84,7 @@
                             app:layout_constraintEnd_toEndOf="@+id/topView"
                             app:layout_constraintStart_toStartOf="@+id/topView"
                             app:layout_constraintTop_toTopOf="@+id/topView"
-                            tools:srcCompat="@drawable/ramesh"
+                            tools:srcCompat="@drawable/pic3"
                             android:layout_marginBottom="25dp"/>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -110,17 +110,16 @@
                     android:weightSum="2">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         tools:ignore="MissingConstraints"
-                        android:layout_weight="0.6"
                         android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Name :"
+                            android:text="Celebraty Name : Katy Perry"
                             android:textSize="18dp"
                             android:paddingTop="10dp"
                             android:textColor="#123"
@@ -129,21 +128,21 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Mobile :"
+                            android:text="Event : Musical Night"
                             android:textSize="18dp"
                             android:textColor="#123"
                             android:layout_marginBottom="10dp"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Email :"
+                            android:text="Venue : Hyderabad"
                             android:textSize="18dp"
                             android:textColor="#123"
                             android:layout_marginBottom="10dp"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Address :"
+                            android:text="Contact Number : 9898989898"
                             android:textColor="#123"
                             android:textSize="18dp"
                             android:layout_marginBottom="10dp"/>
@@ -151,12 +150,11 @@
 
 
                     </LinearLayout>
-                    <LinearLayout
+                    <!--<LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         tools:ignore="MissingConstraints"
-                        android:layout_weight="1.4"
                         android:paddingLeft="10dp">
 
                         <TextView
@@ -190,7 +188,7 @@
                             android:textColor="#123"
                             android:layout_marginBottom="10dp"/>
 
-                    </LinearLayout>
+                    </LinearLayout>-->
 
 
                 </LinearLayout>
@@ -205,54 +203,122 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="About :"
-                        android:textSize="22dp"
-                        android:textColor="#E91E63"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+
                             <TextView
-                                android:id="@+id/textView5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/roboto_medium"
-                                android:padding="10dp"
-                                android:text="Brenda Nokuzola Fassie was born in Langa, Cape Town on the 3rd of November 1964[5] as the youngest of nine children. She was named after American singer Brenda Lee.[5] Her father died when she was two, and with the help of her mother, a pianist, she started earning money by singing for tourists."
-                                android:textAlignment="viewStart"
-                                android:textColor="#123"
-                                android:paddingTop="10dp"
-                                android:textSize="@dimen/font_title_size"
-                                tools:ignore="MissingConstraints" />
+                                android:text="Price per Seat :"
+                                android:textSize="16dp"
+                                android:textColor="#3F51B5"
+                                android:layout_marginLeft="10dp" />
+
                             <TextView
-                                android:id="@+id/textView51"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/roboto_medium"
-                                android:padding="10dp"
-                                android:text="Humanity is a term which commonly refers to the human species, mankind as a whole, or sets of qualities which are used to define human nature, the hum     Humanity is a term which commonly refers to the human species, mankind as a whole, or sets of qualities which are used to define human nature, the hum       Humanity is a term which commonly refers to the human species, mankind as a whole, or sets of qualities which are used to define human nature, the hum     Humanity is a term which commonly refers to the human species, mankind as a whole, or sets of qualities which are used to define human nature, the human "
-                                android:textAlignment="viewStart"
-                                android:textColor="#123"
-                                android:textSize="@dimen/font_title_size"
-                                tools:ignore="MissingConstraints" />
+                                android:text="Rs. 950"
+                                android:textSize="20dp"
+                                android:textColor="#E91E63"
+                                android:layout_marginLeft="10dp" />
+
                         </LinearLayout>
-                    </ScrollView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No of Tickets :"
+                                android:textSize="16dp"
+                                android:textColor="#3F51B5"
+                                android:layout_marginLeft="10dp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_cvv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Number Of Tickets"
+                                android:inputType="number"
+                                android:text="3"
+                                android:textSize="22dp"
+                                android:maxLength="3"
+                                android:maxLines="1"
+                                android:paddingLeft="20dp"
+                                android:singleLine="true"
+                                android:textColor="#E91E63"
+                                android:textColorHint="@color/grey_40"
+                                android:theme="@style/EditText.Grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Amount :"
+                                android:textSize="20dp"
+                                android:textColor="#3F51B5"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rs. 2850"
+                                android:textSize="20dp"
+                                android:textColor="#E91E63"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="20dp"
+                            android:gravity="bottom">
+
+                            <Button
+                                android:id="@+id/booknow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#465AC0"
+                                android:padding="10dp"
+                                android:text="Book Now"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
 
                 </LinearLayout>
 

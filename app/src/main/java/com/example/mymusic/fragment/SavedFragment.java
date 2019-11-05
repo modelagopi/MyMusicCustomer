@@ -22,7 +22,7 @@ public class SavedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.main_fragment, container, false);
+        View view = inflater.inflate(R.layout.tagged_fragment, container, false);
 
         initUI(view);
 
@@ -141,19 +141,19 @@ public class SavedFragment extends Fragment {
 
         Utils.setCircleImageToImageView(getActivity(), imageView1, R.drawable.profile1, 0, 0);
 
-        ImageView imageView2 = view.findViewById(R.id.imageView2);
+      /*  ImageView imageView2 = view.findViewById(R.id.imageView2);
 
         Utils.setCircleImageToImageView(getActivity(), imageView2, R.drawable.profile2, 0, 0);
         ImageView imageView3 = view.findViewById(R.id.imageView3);
 
-        Utils.setCircleImageToImageView(getActivity(), imageView3, R.drawable.pic3, 0, 0);
+        Utils.setCircleImageToImageView(getActivity(), imageView3, R.drawable.pic3, 0, 0);*/
 
         ImageView imageView4 = view.findViewById(R.id.imageView4);
 
         Utils.setCircleImageToImageView(getActivity(), imageView4, R.drawable.pic4, 0, 0);
-        ImageView imageView5 = view.findViewById(R.id.imageView5);
+       /* ImageView imageView5 = view.findViewById(R.id.imageView5);
 
-        Utils.setCircleImageToImageView(getActivity(), imageView5, R.drawable.pic5, 0, 0);
+        Utils.setCircleImageToImageView(getActivity(), imageView5, R.drawable.pic5, 0, 0);*/
 
     }
 
