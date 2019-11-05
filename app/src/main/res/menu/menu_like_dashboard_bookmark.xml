@@ -13,7 +13,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
         android:enabled="true"
         android:icon="@drawable/users"
         app:showAsAction="ifRoom"
-        android:title="Celebraties" />
+        android:title="Celebrates" />
     <item
         android:id="@+id/masg"
         android:enabled="true"

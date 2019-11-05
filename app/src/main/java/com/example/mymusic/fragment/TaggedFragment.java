@@ -16,7 +16,7 @@ import com.example.mymusic.MsgReqFabActivity;
 import com.example.mymusic.R;
 import com.example.mymusic.Utils;
 
-public class SavedFragment extends Fragment {
+public class TaggedFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -137,24 +137,24 @@ public class SavedFragment extends Fragment {
             }
         });*/
 
-        ImageView imageView1 = view.findViewById(R.id.imageView1);
+      /*  ImageView imageView1 = view.findViewById(R.id.imageView1);
 
         Utils.setCircleImageToImageView(getActivity(), imageView1, R.drawable.profile1, 0, 0);
-
-      /*  ImageView imageView2 = view.findViewById(R.id.imageView2);
+*/
+        ImageView imageView2 = view.findViewById(R.id.imageView2);
 
         Utils.setCircleImageToImageView(getActivity(), imageView2, R.drawable.profile2, 0, 0);
         ImageView imageView3 = view.findViewById(R.id.imageView3);
 
-        Utils.setCircleImageToImageView(getActivity(), imageView3, R.drawable.pic3, 0, 0);*/
+        Utils.setCircleImageToImageView(getActivity(), imageView3, R.drawable.pic3, 0, 0);
 
         ImageView imageView4 = view.findViewById(R.id.imageView4);
 
         Utils.setCircleImageToImageView(getActivity(), imageView4, R.drawable.pic4, 0, 0);
        /* ImageView imageView5 = view.findViewById(R.id.imageView5);
 
-        Utils.setCircleImageToImageView(getActivity(), imageView5, R.drawable.pic5, 0, 0);*/
-
+        Utils.setCircleImageToImageView(getActivity(), imageView5, R.drawable.pic5, 0, 0);
+*/
     }
 
     public boolean toggleArrow(View view) {
