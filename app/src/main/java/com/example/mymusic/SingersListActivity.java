@@ -3,6 +3,7 @@ package com.example.mymusic;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -22,58 +23,41 @@ public class SingersListActivity extends AppCompatActivity {
 
    // ImageView coachesback;
     LinearLayout clist_1,clist_2,clist_3,clist_4,clist_5,clist_6,clist_7,clist_8,clist_9,clist_10;
-
+    Button button1,button2,button3,button4,button5;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.singers_list_activity);
 
+        button1 = findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SingersListActivity.this,Button_Music_Activity.class);
+                startActivity(intent);
+            }
+        });
+        button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SingersListActivity.this,Button_Art_Activity.class);
+                startActivity(intent);
+            }
+        });
+        button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SingersListActivity.this,Buton_Magic_activity.class);
+                startActivity(intent);
+            }
+        });
+
         InitUI();
     }
 
-       /* coachesback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
 
-            }
-        });*/
-
-      /*  ViewPager viewP = findViewById(R.id.viewPager2);
-        setupViewPag(viewP);
-
-        TabLayout tabLayou = findViewById(R.id.tabLayout1);
-        tabLayou.setupWithViewPager(viewP);
-
-    }*/
-   /* private void setupViewPag(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-
-   *//*     BrowserFragment BrowserFragment = new BrowserFragment();
-        adapter.addFragment(BrowserFragment, "Browser");
-
-        SavedFragment SavedFragment = new SavedFragment();
-        adapter.addFragment(SavedFragment, "Saved");
-
-        HiredFragment HiredFragment = new HiredFragment();
-        adapter.addFragment(HiredFragment, "Hired");*//*
-
-
-        Top_Music_Fragment HiredFragmen = new Top_Music_Fragment();
-        adapter.addFragment(HiredFragmen, "Music");
-
-        Top_Arts_Fragment HiredFragme = new Top_Arts_Fragment();
-        adapter.addFragment(HiredFragme, "Arts");
-
-        Top_BookWrite_Fragment HiredFragm = new Top_BookWrite_Fragment();
-        adapter.addFragment(HiredFragm, "Book Writers");
-
-
-
-
-        viewPager.setAdapter(adapter);
-    }
-*/
 
     public void InitUI(){
 
