@@ -40,7 +40,6 @@ public class Calls_Upcomming_Fragment extends Fragment {
 
                 Intent intent = new Intent(getActivity(), BookACall.class);
                 startActivity(intent);
-
             }
         });*/
 
@@ -48,14 +47,13 @@ public class Calls_Upcomming_Fragment extends Fragment {
 
         return view;
 
-
     }
-
-
 
     private void initUI(View view){
 
-        bookLL1 = view.findViewById(R.id.bookLL1);
+        ImageView book1 = view.findViewById(R.id.book1);
+        book1.setImageResource(R.drawable.booking);
+        LinearLayout bookLL1 = view.findViewById(R.id.bookLL1);
         bookLL1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,37 +61,93 @@ public class Calls_Upcomming_Fragment extends Fragment {
             }
         });
 
-
-        ImageView book1 = view.findViewById(R.id.book1);
-        book1.setImageResource(R.drawable.booking);
-
         ImageView book2 = view.findViewById(R.id.book2);
         book2.setImageResource(R.drawable.booking);
-
+        LinearLayout bookLL2 = view.findViewById(R.id.bookLL2);
+        bookLL2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
         ImageView book3 = view.findViewById(R.id.book3);
         book3.setImageResource(R.drawable.booking);
+        LinearLayout bookLL3 = view.findViewById(R.id.bookLL3);
+        bookLL3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
         ImageView book4 = view.findViewById(R.id.book4);
         book4.setImageResource(R.drawable.booking);
+        LinearLayout bookLL4 = view.findViewById(R.id.bookLL4);
+        bookLL4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
         ImageView book5 = view.findViewById(R.id.book5);
         book5.setImageResource(R.drawable.booking);
-
+        LinearLayout bookLL5 = view.findViewById(R.id.bookLL5);
+        bookLL5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
         ImageView book6 = view.findViewById(R.id.book6);
         book6.setImageResource(R.drawable.booking);
+        LinearLayout bookLL6 = view.findViewById(R.id.bookLL6);
+        bookLL6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
         ImageView book7 = view.findViewById(R.id.book7);
         book7.setImageResource(R.drawable.booking);
+        LinearLayout bookLL7 = view.findViewById(R.id.bookLL7);
+        bookLL7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
         ImageView book8 = view.findViewById(R.id.book8);
         book8.setImageResource(R.drawable.booking);
+        LinearLayout bookLL8 = view.findViewById(R.id.bookLL8);
+        bookLL8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
         ImageView book9 = view.findViewById(R.id.book9);
         book9.setImageResource(R.drawable.booking);
+        LinearLayout bookLL9 = view.findViewById(R.id.bookLL9);
+        bookLL9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
         ImageView book10 = view.findViewById(R.id.book10);
         book10.setImageResource(R.drawable.booking);
-
+        LinearLayout bookLL10 = view.findViewById(R.id.bookLL10);
+        bookLL10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Ticket_Booking_Activity.class));
+            }
+        });
 
         ImageView imageView1 = view.findViewById(R.id.chatimage1);
         Utils.setCircleImageToImageView(getActivity(), imageView1, R.drawable.pic3, 0, 0);

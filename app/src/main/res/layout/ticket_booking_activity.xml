@@ -54,6 +54,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -97,106 +107,148 @@
                 android:layout_height="1dp"
                 android:background="#DBD8D8"/>
 
-
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="5dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        tools:ignore="MissingConstraints"
-                        android:paddingLeft="10dp">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
 
-                        <TextView
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Celebraty Name : Katy Perry"
-                            android:textSize="18dp"
-                            android:paddingTop="10dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints"
+                            android:paddingLeft="10dp">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Event : Musical Night"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Venue : Hyderabad"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Contact Number : 9898989898"
-                            android:textColor="#123"
-                            android:textSize="18dp"
-                            android:layout_marginBottom="10dp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Celebraty Name :"
+                                    android:textSize="16dp"
+                                    android:textColor="#072BF7"
+                                    android:layout_marginLeft="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Katy Perry"
+                                    android:textSize="18dp"
+                                    android:textColor="#3F51B5"
+                                    android:layout_marginLeft="10dp" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Event :"
+                                    android:textSize="16dp"
+                                    android:textColor="#072BF7"
+                                    android:layout_marginLeft="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Musical Night"
+                                    android:textSize="18dp"
+                                    android:textColor="#3F51B5"
+                                    android:layout_marginLeft="10dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Venue :"
+                                    android:textSize="16dp"
+                                    android:textColor="#072BF7"
+                                    android:layout_marginLeft="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hyderabad"
+                                    android:textSize="18dp"
+                                    android:textColor="#3F51B5"
+                                    android:layout_marginLeft="10dp" />
+
+                            </LinearLayout>
 
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
 
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Contact Number :"
+                                    android:textSize="16dp"
+                                    android:textColor="#072BF7"
+                                    android:layout_marginLeft="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9898989898"
+                                    android:textSize="18dp"
+                                    android:textColor="#3F51B5"
+                                    android:layout_marginLeft="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
                     </LinearLayout>
-                    <!--<LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        tools:ignore="MissingConstraints"
-                        android:paddingLeft="10dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Ramesh"
-                            android:textSize="18dp"
-                            android:paddingTop="10dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="9999999999"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="example@gmail.com "
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Hyderabad"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-
-                    </LinearLayout>-->
-
-
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#DBD8D8"/>
+<!--            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DBD8D8"/>-->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -206,126 +258,154 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="5dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Price per Seat :"
-                                android:textSize="16dp"
-                                android:textColor="#3F51B5"
-                                android:layout_marginLeft="10dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rs. 950"
-                                android:textSize="20dp"
-                                android:textColor="#E91E63"
-                                android:layout_marginLeft="10dp" />
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="5dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="No of Tickets :"
-                                android:textSize="16dp"
-                                android:textColor="#3F51B5"
-                                android:layout_marginLeft="10dp" />
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/et_cvv"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Number Of Tickets"
-                                android:inputType="number"
-                                android:text="3"
-                                android:textSize="22dp"
-                                android:maxLength="3"
-                                android:maxLines="1"
-                                android:paddingLeft="20dp"
-                                android:singleLine="true"
-                                android:textColor="#E91E63"
-                                android:textColorHint="@color/grey_40"
-                                android:theme="@style/EditText.Grey" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Total Amount :"
-                                android:textSize="20dp"
-                                android:textColor="#3F51B5"
-                                android:layout_marginLeft="10dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rs. 2850"
-                                android:textSize="20dp"
-                                android:textColor="#E91E63"
-                                android:layout_marginLeft="10dp" />
-
-                        </LinearLayout>
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                            android:padding="20dp"
-                            android:gravity="bottom">
+                            android:orientation="vertical"
+                            android:padding="10dp">
 
-                            <Button
-                                android:id="@+id/booknow"
+
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="#465AC0"
-                                android:padding="10dp"
-                                android:text="Book Now"
-                                android:textColor="#ffffff"
-                                android:textSize="20dp"
-                                android:textStyle="bold" />
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price per Seat :"
+                                    android:textSize="16dp"
+                                    android:textColor="#072BF7"
+                                    android:layout_marginLeft="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rs. 950"
+                                    android:textSize="18dp"
+                                    android:textColor="#3F51B5"
+                                    android:layout_marginLeft="10dp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="No of Tickets :"
+                                    android:textSize="16dp"
+                                    android:textColor="#072BF7"
+                                    android:layout_marginLeft="10dp" />
+
+<!--
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/et_cvv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Number Of Tickets"
+                                    android:inputType="number"
+                                    android:text="3"
+                                    android:textSize="18dp"
+                                    android:maxLength="3"
+                                    android:maxLines="1"
+                                    android:paddingLeft="20dp"
+                                    android:singleLine="true"
+                                    android:textColor="#E91E63"
+                                    android:textColorHint="@color/grey_40"
+                                    android:theme="@style/EditText.Grey" />
+-->
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="3dp"
+                                    android:background="@drawable/spinnerbg"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/numberoftickets"
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:src="@mipmap/spinner_down" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Amount :"
+                                    android:textSize="18dp"
+                                    android:textColor="#072BF7"
+                                    android:layout_marginLeft="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rs. 2850"
+                                    android:textSize="18dp"
+                                    android:textColor="#3F51B5"
+                                    android:layout_marginLeft="10dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="20dp"
+                                android:gravity="bottom">
+
+                                <Button
+                                    android:id="@+id/booknow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#465AC0"
+                                    android:padding="10dp"
+                                    android:text="Book Now"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp" />
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
-
-
                     </LinearLayout>
 
-
-
-
-
-
-
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
+
+
         </LinearLayout>
 
-
+        </ScrollView>
     </LinearLayout>
 
 </LinearLayout>

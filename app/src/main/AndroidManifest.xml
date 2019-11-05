@@ -25,10 +25,12 @@
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".SingersListActivity"/>
         <activity android:name=".Chat_Activity"/>
+        <activity android:name=".HomeEventsActivity"/>
+        <activity android:name=".PaymentCardDetails"/>
+        <activity android:name=".PaymentSuccessDialog"/>
         <activity android:name=".Singers_Profile_Activity"/>
         <activity android:name=".Ticket_Booking_Activity"/>
-        <activity android:name=".PaymentSuccessDialog"/>
-        <activity android:name=".PaymentCardDetails"/>
+
     </application>
 
 </manifest>

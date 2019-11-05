@@ -103,108 +103,134 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-                <LinearLayout
+
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:layout_margin="10dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="5dp">
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        tools:ignore="MissingConstraints"
-                        android:layout_weight="0.6"
-                        android:paddingLeft="10dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                        <TextView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Name :"
-                            android:textSize="18dp"
-                            android:paddingTop="10dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
+                            android:orientation="horizontal"
+                            android:weightSum="2">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mobile :"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Email :"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Address :"
-                            android:textColor="#123"
-                            android:textSize="18dp"
-                            android:layout_marginBottom="10dp"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                tools:ignore="MissingConstraints"
+                                android:layout_weight="0.6"
+                                android:paddingLeft="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name :"
+                                    android:textSize="18dp"
+                                    android:paddingTop="10dp"
+                                    android:textColor="#123"
+                                    android:layout_marginBottom="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mobile :"
+                                    android:textSize="18dp"
+                                    android:textColor="#123"
+                                    android:layout_marginBottom="10dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email :"
+                                    android:textSize="18dp"
+                                    android:textColor="#123"
+                                    android:layout_marginBottom="10dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address :"
+                                    android:textColor="#123"
+                                    android:textSize="18dp"
+                                    android:layout_marginBottom="10dp"/>
 
 
 
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                tools:ignore="MissingConstraints"
+                                android:layout_weight="1.4"
+                                android:paddingLeft="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ramesh"
+                                    android:textSize="18dp"
+                                    android:paddingTop="10dp"
+                                    android:textColor="#123"
+                                    android:layout_marginBottom="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="9999999999"
+                                    android:textSize="18dp"
+                                    android:textColor="#123"
+                                    android:layout_marginBottom="10dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="example@gmail.com "
+                                    android:textSize="18dp"
+                                    android:textColor="#123"
+                                    android:layout_marginBottom="10dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hyderabad"
+                                    android:textSize="18dp"
+                                    android:textColor="#123"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
                     </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        tools:ignore="MissingConstraints"
-                        android:layout_weight="1.4"
-                        android:paddingLeft="10dp">
+                </androidx.cardview.widget.CardView>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Ramesh"
-                            android:textSize="18dp"
-                            android:paddingTop="10dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="9999999999"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="example@gmail.com "
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Hyderabad"
-                            android:textSize="18dp"
-                            android:textColor="#123"
-                            android:layout_marginBottom="10dp"/>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <View
+                <!--<View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#DBD8D8"/>
+                    android:background="#DBD8D8"/>-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
 
                     <TextView
                         android:layout_width="match_parent"
@@ -214,10 +240,6 @@
                         android:textColor="#E91E63"
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="10dp"/>
-
-                    <ScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -252,9 +274,11 @@
                                 android:textSize="@dimen/font_title_size"
                                 tools:ignore="MissingConstraints" />
                         </LinearLayout>
-                    </ScrollView>
+
 
                 </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
 
             </LinearLayout>
         </LinearLayout>
