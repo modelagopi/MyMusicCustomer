@@ -1,6 +1,7 @@
 package com.example.mymusic.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
@@ -9,10 +10,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mymusic.Celebrity_Profile_Activity;
+import com.example.mymusic.ProfileActivity;
 import com.example.mymusic.R;
 import com.example.mymusic.Utils;
 import com.example.mymusic.object.DirectoryHome7Category;
@@ -68,8 +72,37 @@ public class HomeEventsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             holder.catbackgroundImageView.setColorFilter(color, PorterDuff.Mode.SRC_IN);
 
             holder.catbackgroundImageView.setOnClickListener(view -> {
-                if(itemClickListener != null) {
-                 /*   itemClickListener.onItemClick(view, catArrayList.get(position), position);*/
+                switch(position) {
+                    case 0:
+                        Toast.makeText(context,"click on Album", Toast.LENGTH_SHORT).show();
+                       // context.startActivity(new Intent(context, UpCommingcallActivity.class));
+                        break;
+                    case 1:
+                        Toast.makeText(context,"click on Regalia", Toast.LENGTH_SHORT).show();
+                       // context.startActivity(new Intent(context, CustomerActivity.class));
+                        break;
+                    case 2:
+                        Toast.makeText(context,"click on Awards", Toast.LENGTH_SHORT).show();
+                     //   context.startActivity(new Intent(context, SheduleActivity.class));
+                        break;
+                    case 3:
+                        Toast.makeText(context,"click on Sold Items", Toast.LENGTH_SHORT).show();
+                     //   context.startActivity(new Intent(context, ReportsActivity.class));
+                        break;
+                    case 4:
+                        Toast.makeText(context,"click on Upcomming Events", Toast.LENGTH_SHORT).show();
+
+                        break;
+                    case 5:
+                        context.startActivity(new Intent(context, Celebrity_Profile_Activity.class));
+                        break;
+                      //  context.startActivity(new Intent(context, CategoryActivity.class));
+                    case 6:
+                        Toast.makeText(context,"click on Follows", Toast.LENGTH_SHORT).show();
+
+                        break;
+                    default:
+                        Toast.makeText(context,"click on Chat", Toast.LENGTH_SHORT).show();
                 }
             });
 

@@ -84,7 +84,7 @@
                         app:layout_constraintEnd_toEndOf="@+id/topView"
                         app:layout_constraintStart_toStartOf="@+id/topView"
                         app:layout_constraintTop_toTopOf="@+id/topView"
-                        tools:srcCompat="@drawable/pic3"
+                        tools:srcCompat="@drawable/profile1"
                         android:layout_marginBottom="25dp"/>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>

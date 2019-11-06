@@ -84,7 +84,7 @@ public class Celebrity_Profile_Activity extends AppCompatActivity {
     private void initUI() {
         ImageView imageView1 = findViewById(R.id.profileImageView);
 
-        Utils.setCircleImageToImageView(this, imageView1, R.drawable.pic3, 0, 0);
+        Utils.setCircleImageToImageView(this, imageView1, R.drawable.profile1, 0, 0);
 
     }
 }

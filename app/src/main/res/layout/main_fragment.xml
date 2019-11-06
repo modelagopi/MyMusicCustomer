@@ -205,13 +205,8 @@
                                 android:text="humanity. Humanity is the human race, which includes everyone on Earth. It's also a word for the qualities that make us human, such as the ability to love and have compassion, be creative, and not be a robot or alien. ... When people do bad things, it tests your faith in humanity."
                                 android:textSize="10dp" />
 
-
-
-
                         </LinearLayout>
                     </LinearLayout>
-
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -276,14 +271,8 @@
                                 android:text="humanity. Humanity is the human race, which includes everyone on Earth. It's also a word for the qualities that make us human, such as the ability to love and have compassion, be creative, and not be a robot or alien. ... When people do bad things, it tests your faith in humanity."
                                 android:textSize="10dp" />
 
-
-
-
-
                         </LinearLayout>
                     </LinearLayout>
-
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -348,9 +337,6 @@
                                 android:text="humanity. Humanity is the human race, which includes everyone on Earth. It's also a word for the qualities that make us human, such as the ability to love and have compassion, be creative, and not be a robot or alien. ... When people do bad things, it tests your faith in humanity."
                                 android:textSize="10dp" />
 
-
-
-
                         </LinearLayout>
                     </LinearLayout>
 
@@ -374,8 +360,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="0dp"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="100dp">
+                    android:orientation="vertical">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

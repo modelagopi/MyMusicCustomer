@@ -1,8 +1,10 @@
 package com.example.mymusic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +25,7 @@ public class Button_Art_Activity extends AppCompatActivity {
                 finish();
             }
         });
-
+        LinearLayout clist_1 = findViewById(R.id.clist_1);
         chatimage1 = findViewById(R.id.chatimage1);
         chatimage2 = findViewById(R.id.chatimage2);
         chatimage3 = findViewById(R.id.chatimage3);
@@ -36,6 +38,15 @@ public class Button_Art_Activity extends AppCompatActivity {
         Utils.setCircleImageToImageView(this, chatimage4, R.drawable.artist4, 0, 0);
         Utils.setCircleImageToImageView(this, chatimage5, R.drawable.artist5, 0, 0);
         Utils.setCircleImageToImageView(this, chatimage1, R.drawable.artist1, 0, 0);
+
+        clist_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(Button_Art_Activity.this, HomeEventsActivity.class));
+
+            }
+        });
 
 
     }

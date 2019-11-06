@@ -1,13 +1,15 @@
 package com.example.mymusic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Buton_Magic_activity extends AppCompatActivity {
+public class Button_Magic_activity extends AppCompatActivity {
 
     ImageView chatimage1,chatimage2,chatimage3,chatimage4,chatimage5,imageView47;
     @Override
@@ -23,7 +25,7 @@ public class Buton_Magic_activity extends AppCompatActivity {
                 finish();
             }
         });
-
+        LinearLayout clist_1 = findViewById(R.id.clist_1);
         chatimage1 = findViewById(R.id.chatimage1);
         chatimage2 = findViewById(R.id.chatimage2);
         chatimage3 = findViewById(R.id.chatimage3);
@@ -36,6 +38,14 @@ public class Buton_Magic_activity extends AppCompatActivity {
         Utils.setCircleImageToImageView(this, chatimage4, R.drawable.mig4, 0, 0);
         Utils.setCircleImageToImageView(this, chatimage5, R.drawable.mig5, 0, 0);
         Utils.setCircleImageToImageView(this, chatimage1, R.drawable.mig1, 0, 0);
+        clist_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(Button_Magic_activity.this, HomeEventsActivity.class));
+
+            }
+        });
 
 
     }

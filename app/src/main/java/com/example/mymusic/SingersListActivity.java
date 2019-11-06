@@ -9,15 +9,6 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
-import com.example.mymusic.adapter.ViewPagerAdapter;
-import com.example.mymusic.fragment.Top_Arts_Fragment;
-import com.example.mymusic.fragment.Top_BookWrite_Fragment;
-import com.example.mymusic.fragment.Top_Magic_Fragment;
-import com.example.mymusic.fragment.Top_Music_Fragment;
-import com.example.mymusic.fragment.Top_Personal_Fragment;
-import com.google.android.material.tabs.TabLayout;
 
 public class SingersListActivity extends AppCompatActivity {
 
@@ -49,7 +40,7 @@ public class SingersListActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SingersListActivity.this,Buton_Magic_activity.class);
+                Intent intent = new Intent(SingersListActivity.this, Button_Magic_activity.class);
                 startActivity(intent);
             }
         });
@@ -137,7 +128,7 @@ public class SingersListActivity extends AppCompatActivity {
         });
 
         ImageView imageView1 = findViewById(R.id.chatimage1);
-        Utils.setCircleImageToImageView(this, imageView1, R.drawable.pic3, 0, 0);
+        Utils.setCircleImageToImageView(this, imageView1, R.drawable.profile1, 0, 0);
 
         ImageView imageView2 = findViewById(R.id.chatimage2);
         Utils.setCircleImageToImageView(this, imageView2, R.drawable.pic4, 0, 0);
@@ -146,7 +137,7 @@ public class SingersListActivity extends AppCompatActivity {
         Utils.setCircleImageToImageView(this, imageView3, R.drawable.pic5, 0, 0);
 
         ImageView imageView4 = findViewById(R.id.chatimage4);
-        Utils.setCircleImageToImageView(this, imageView4, R.drawable.profile1, 0, 0);
+        Utils.setCircleImageToImageView(this, imageView4, R.drawable.pic3, 0, 0);
 
         ImageView imageView5 = findViewById(R.id.chatimage5);
         Utils.setCircleImageToImageView(this, imageView5, R.drawable.profile2, 0, 0);

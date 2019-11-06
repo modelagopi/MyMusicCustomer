@@ -1,6 +1,7 @@
 package com.example.mymusic.fragment;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,17 +16,24 @@ import com.example.mymusic.R;
  */
 public class Top_Arts_Fragment extends Fragment {
 
-
-    public Top_Arts_Fragment() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.top_relationship_fragment, container, false);
+        View view = inflater.inflate(R.layout.top_relationship_fragment, container, false);
+
+        return  view;
     }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
+
 
 }

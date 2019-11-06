@@ -3,6 +3,8 @@ package com.example.mymusic;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -124,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
         /*Top_Family_Fragment tab6 = new Top_Family_Fragment();
         adapter.addFragment(tab6, "Family");*/
+
 
 
         viewPager.setAdapter(adapter);

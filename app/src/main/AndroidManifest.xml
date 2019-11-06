@@ -32,7 +32,7 @@
         <activity android:name=".Ticket_Booking_Activity"/>
         <activity android:name=".Button_Music_Activity"/>
         <activity android:name=".Button_Art_Activity"/>
-        <activity android:name=".Buton_Magic_activity"/>
+        <activity android:name=".Button_Magic_activity"/>
 
     </application>
 

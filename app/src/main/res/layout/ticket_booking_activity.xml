@@ -144,7 +144,8 @@
                                     android:layout_height="wrap_content"
                                     android:text="Celebraty Name :"
                                     android:textSize="16dp"
-                                    android:textColor="#072BF7"
+                                    android:textColor="#123"
+                                    android:textStyle="bold"
                                     android:layout_marginLeft="10dp" />
 
                                 <TextView
@@ -167,7 +168,8 @@
                                     android:layout_height="wrap_content"
                                     android:text="Event :"
                                     android:textSize="16dp"
-                                    android:textColor="#072BF7"
+                                    android:textColor="#123"
+                                    android:textStyle="bold"
                                     android:layout_marginLeft="10dp" />
 
                                 <TextView
@@ -191,7 +193,8 @@
                                     android:layout_height="wrap_content"
                                     android:text="Venue :"
                                     android:textSize="16dp"
-                                    android:textColor="#072BF7"
+                                    android:textColor="#123"
+                                    android:textStyle="bold"
                                     android:layout_marginLeft="10dp" />
 
                                 <TextView
@@ -216,7 +219,8 @@
                                     android:layout_height="wrap_content"
                                     android:text="Contact Number :"
                                     android:textSize="16dp"
-                                    android:textColor="#072BF7"
+                                    android:textColor="#123"
+                                    android:textStyle="bold"
                                     android:layout_marginLeft="10dp" />
 
                                 <TextView
@@ -270,14 +274,16 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Price per Seat :"
                                     android:textSize="16dp"
-                                    android:textColor="#072BF7"
+                                    android:textColor="#123"
+                                    android:textStyle="bold"
                                     android:layout_marginLeft="10dp" />
 
                                 <TextView
@@ -294,14 +300,16 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="No of Tickets :"
                                     android:textSize="16dp"
-                                    android:textColor="#072BF7"
+                                    android:textColor="#123"
+                                    android:textStyle="bold"
                                     android:layout_marginLeft="10dp" />
 
 <!--
@@ -327,7 +335,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="3dp"
                                     android:background="@drawable/spinnerbg"
-                                    android:orientation="horizontal">
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="10dp">
 
                                     <Spinner
                                         android:id="@+id/numberoftickets"
@@ -362,7 +371,8 @@
                                     android:layout_height="wrap_content"
                                     android:text="Total Amount :"
                                     android:textSize="18dp"
-                                    android:textColor="#072BF7"
+                                    android:textColor="#123"
+                                    android:textStyle="bold"
                                     android:layout_marginLeft="10dp" />
 
                                 <TextView
